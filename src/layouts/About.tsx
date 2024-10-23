@@ -2,8 +2,9 @@ import { GraduationCap, Users, TrendingUp, PiggyBank, Radio, Speech } from "luci
 import { Button } from "@/components/ui/button"
 function About() {
     return (
+        <>
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900" id="about">
-            <div className="container px-4 md:px-6">
+            <div className="container px-4 md:px-6 mx-auto">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
                     ¿Por qué Educación Financiera 2.0?
                 </h2>
@@ -16,7 +17,7 @@ function About() {
                     <div className="flex flex-col items-center text-center">
                         <Users className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Comunidad Activa</h3>
-                        <p className="text-gray-400">Únete a miles de estudiantes apasionados por las criptomonedas.</p>
+                        <p className="text-gray-400">Únete a cientos de estudiantes apasionados por las criptomonedas.</p>
                     </div>
                     <div className="flex flex-col items-center text-center">
                         <TrendingUp className="h-12 w-12 mb-4 text-yellow-500" />
@@ -47,6 +48,7 @@ function About() {
                 </div>
             </div>
         </section>
+        </>
     )
 }
 
