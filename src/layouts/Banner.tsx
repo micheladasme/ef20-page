@@ -11,11 +11,11 @@ function Banner() {
                   Conoce el Mundo de las Criptomonedas
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-200 md:text-xl">
-                  Aprende todo sobre finanzas y criptomonedas con nuestros cursos gratuitos en YouTube.
+                  Aprende todo sobre finanzas y criptomonedas con nuestros cursos <strong> gratuitos </strong> en YouTube.
                 </p>
               </div>
               <div className="space-x-4">
-                <Button className="bg-yellow-500 text-black md:text-lg hover:bg-yellow-70 lg:w-30 lg:h-10 rounded-full" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0', '_blank')}>Ver Cursos</Button>
+                <Button className="bg-yellow-500 text-black md:text-lg hover:bg-yellow-70 lg:w-30 lg:h-10 rounded-full" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0/playlists', '_blank')}>Ver Cursos</Button>
               </div>
             </div>
         </section>

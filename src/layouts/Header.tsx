@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Menu, X } from "lucide-react"
+import { Separator } from "@/components/ui/separator"
+import { MenuIcon, XIcon } from "lucide-react"
 import logo from "../assets/ef-image.jpg"
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { useState } from "react"
@@ -10,25 +11,42 @@ function Header() {
     const MenuItems = ({ mobile = false }) => (
         <>
             <a
-                className={`text-sm font-medium hover:text-yellow-500 transition-colors ${mobile ? 'block py-2' : ''}`}
-                href="#home" onClick={() => setIsOpen(false)}
+                className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
+                href="#home" onClick={() => {setIsOpen(false)}}
             >
                 Inicio
             </a>
+            <Separator orientation="horizontal" className={`${mobile ? '' : 'hidden'}`} />
             <a
-                className={`text-sm font-medium hover:text-yellow-500 transition-colors ${mobile ? 'block py-2' : ''}`}
+                className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
                 href="#about" onClick={() => setIsOpen(false)}
             >
                 Sobre Nosotros
             </a>
+            <Separator orientation="horizontal" className="md:hidden" />
             <a
-                className={`text-sm font-medium hover:text-yellow-500 transition-colors ${mobile ? 'block py-2' : ''}`}
+                className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
+                href="#teacher" onClick={() => setIsOpen(false)}
+            >
+                Profesor
+            </a>
+            <Separator orientation="horizontal" className="md:hidden" />
+            <a
+                className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
+                href="#mentoring" onClick={() => setIsOpen(false)}
+            >
+                Mentorias
+            </a>
+            <Separator orientation="horizontal" className="md:hidden" />
+            <a
+                className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
                 href="#contact" onClick={() => setIsOpen(false)}
             >
                 Contacto
             </a>
+            <Separator orientation="horizontal" className="md:hidden" />
             <a
-                className={`text-sm font-medium hover:text-yellow-500 transition-colors ${mobile ? 'block py-2' : ''}`}
+                className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
                 href="#donation" onClick={() => setIsOpen(false)}
             >
                 Donaciones
@@ -51,7 +69,7 @@ function Header() {
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="md:hidden" aria-label="Menu">
-                                <Menu className="h-6 w-6" />
+                                <MenuIcon className="h-12 w-12" />
                             </Button>
                         </SheetTrigger>
                         <SheetTitle className="hidden">
@@ -61,7 +79,7 @@ function Header() {
                                 <span className="text-lg font-bold">Menú</span>
                                 <SheetTrigger asChild>
                                     <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)} aria-label="Cerrar menú" className="text-gray-400 hover:text-white">
-                                        <X className="h-6 w-6" />
+                                        <XIcon className="h-6 w-6" />
                                     </Button>
                                 </SheetTrigger>
                             </div>

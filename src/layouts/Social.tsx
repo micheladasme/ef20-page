@@ -10,7 +10,7 @@ function Social() {
         <p className="text-center text-gray-400 mb-8">
           Únete a nuestra comunidad y accede a nuestro contenido más reciente.
         </p>
-        <div className="flex justify-center space-x-4">
+        <div className="flex justify-center space-x-8">
           <TooltipProvider delayDuration={0}>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -32,7 +32,7 @@ function Social() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  className="bg-black text-white hover:bg-gray-700 w-16 h-16 rounded-full"
+                  className="bg-black text-white hover:bg-gray-700 w-16 h-16 rounded-full border-2 border-t-[#08f7f0] border-l-[#08f7f0] border-b-[#ff0855] border-r-[#ff0855]"
                   onClick={() => window.open('https://www.tiktok.com/@elponton', '_blank')}
                   aria-label="Canal de TikTok"
                 >
@@ -49,7 +49,7 @@ function Social() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  className="bg-black text-white hover:bg-gray-700 w-16 h-16 rounded-full"
+                  className="bg-black text-white hover:bg-gray-700 w-16 h-16 rounded-full outline outline-white"
                   onClick={() => window.open('https://x.com/rafaelponton', '_blank')}
                   aria-label="Canal de TikTok"
                 >

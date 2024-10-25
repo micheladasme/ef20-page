@@ -9,7 +9,7 @@ function Contact(){
           Si tienes cualquier duda, habla con Rafael.
         </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button className="transition ease-in-out delay-150 bg-[#73c86a] hover:-translate-y-1 hover:scale-110 hover:hover:bg-[#73c86a]/80 duration-300" onClick={() => window.open('https://wa.me/573122534196?text=Hola Rafael, estoy interesado en hablar contigo.', '_blank')} >
+            <Button className="w-40 h-12 transition ease-in-out delay-150 bg-[#73c86a] hover:-translate-y-1 hover:scale-110 hover:hover:bg-[#73c86a]/80 duration-300" onClick={() => window.open('https://wa.me/573122534196?text=Hola Rafael, estoy interesado en hablar contigo.', '_blank')} >
             <img className="h-5 w-5" src="https://cdn.simpleicons.org/whatsapp/white" />
               Via Whatsapp
             </Button>

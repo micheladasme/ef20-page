@@ -12,10 +12,7 @@ import {
 import {
   Card,
   CardContent,
-  CardDescription,
-  CardFooter,
   CardHeader,
-  CardTitle,
 } from "@/components/ui/card"
 import { Check, Copy } from "lucide-react"
 import { Label } from "@/components/ui/label"
@@ -26,11 +23,14 @@ import { useState } from "react"
 
 function Donation() {
   const [isCopied, setIsCopied] = useState(false);
-  const handleClick = () => {() => {
-    const copyText = document.getElementById("link");
-    navigator.clipboard.writeText(copyText.value);
-    setIsCopied(!isCopied);
-  }};
+  const [inputWalletValue] = useState('TNjeeTYqCvU4rGJPrpXecXYXgoJ7SjPcZC');
+  const iconClassCopy = isCopied ? "hidden" : "";
+  const iconClassCheck = isCopied ? "" : "hidden";
+  const handleClick = () => {
+      navigator.clipboard.writeText(inputWalletValue);
+      setIsCopied(!isCopied);
+  };
+  
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-black to-gray-900" id="donation">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Apoya a nuestro Canal</h2>
@@ -116,15 +116,15 @@ function Donation() {
                   <Input
                     id="link"
                     className="text-xs"
-                    defaultValue="TNjeeTYqCvU4rGJPrpXecXYXgoJ7SjPcZC"
+                    defaultValue={inputWalletValue}
                     readOnly
                   />
                 </div>
               </div>
               <Button type="button" size="sm" className="px-3" onClick={handleClick}>
                 <span className="sr-only">Copiar</span>
-                <span><Copy className="h-4 w-4"/></span>
-                <span className="hidden"><Check className="h-4 w-4"/></span>
+                <span className={iconClassCopy}><Copy className="h-4 w-4"/></span>
+                <span className={iconClassCheck}><Check className="h-4 w-4 text-green-600"/></span>
               </Button>
             </div>
             <Label className="mt-2 text-xs text-muted-foreground">

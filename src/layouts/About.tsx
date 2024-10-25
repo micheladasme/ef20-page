@@ -28,7 +28,7 @@ function About() {
                         <Radio className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Programas en VIVO</h3>
                         <p className="text-gray-400">Aprende en VIVO junto a Rafael de Lunes a Viernes. 19:00 Hora Colombia (-5 UTC).</p>
-                        <Button className="bg-[#ea333d] hover:bg-[#ea333d]/80 mt-2" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0', '_blank')}>
+                        <Button className="bg-[#ea333d] hover:bg-[#ea333d]/80 mt-2" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0/streams', '_blank')}>
                             Ir a Youtube
                         </Button>
                     </div>

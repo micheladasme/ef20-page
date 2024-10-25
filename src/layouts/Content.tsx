@@ -1,4 +1,4 @@
-import { AspectRatio } from "@/components/ui/aspect-ratio"
+// import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { TikTokEmbed, YouTubeEmbed } from 'react-social-media-embed';
 function Content() {
     return (
