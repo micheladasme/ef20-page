@@ -34,11 +34,10 @@ function Donation() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-black to-gray-900" id="donation">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Apoya a nuestro Canal</h2>
+      <p className="text-center text-gray-400 mb-8">
+          Apoya a Rafael para que siga creando <strong>contenido gratuito y de calidad.</strong>
+        </p>
       <div className="flex flex-wrap justify-center gap-4">
-        {/* <Button className="bg-[#0079C1] hover:bg-[#0079C1]/80" onClick={() => window.open('https://paypal.com/donate/?hosted_button_id=UGHG5VLXL3GML', '_blank')} >
-        <img className="h-5 w-5" src="https://cdn.simpleicons.org/paypal/white" />
-          Donar via PayPal
-        </Button> */}
 
         <Card className="bg-[#0079C1] hover:bg-[#0079C1]/80 border-0" onClick={() => window.open('https://paypal.com/donate/?hosted_button_id=UGHG5VLXL3GML', '_blank')}>
           <CardHeader>

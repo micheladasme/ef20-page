@@ -15,14 +15,14 @@ function Social() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  className="bg-red-600 text-white hover:bg-red-700 w-16 h-16 rounded-full"
+                  className="bg-red-600 text-white hover:bg-red-700 w-16 h-16 rounded-full outline outline-white"
                   onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0', '_blank')}
                   aria-label="Canal de YouTube"
                 >
                   <img className="h-8 w-8" src="https://cdn.simpleicons.org/youtube/white" />
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>
+              <TooltipContent side="bottom" sideOffset={9}>
                 <p>@EducacionFinanciera2.0</p>
               </TooltipContent>
             </Tooltip>
@@ -32,15 +32,15 @@ function Social() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  className="bg-black text-white hover:bg-gray-700 w-16 h-16 rounded-full border-2 border-t-[#08f7f0] border-l-[#08f7f0] border-b-[#ff0855] border-r-[#ff0855]"
-                  onClick={() => window.open('https://www.tiktok.com/@elponton', '_blank')}
-                  aria-label="Canal de TikTok"
+                  className="bg-white text-white hover:bg-[#239cd7]-700 w-16 h-16 rounded-full outline outline-white"
+                  onClick={() => window.open('https://t.me/educacionfinancieratelegram', '_blank')}
+                  aria-label="Canal de Telegram"
                 >
-                  <img className="h-8 w-8" src="https://cdn.simpleicons.org/tiktok/white" />
+                  <img className="h-8 w-8" src="https://cdn.simpleicons.org/telegram/[#26A5E4]" />
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>
-                <p>@elponton</p>
+              <TooltipContent side="bottom" sideOffset={9}>
+                <p>educacionfinancieratelegram</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -51,12 +51,12 @@ function Social() {
                 <Button
                   className="bg-black text-white hover:bg-gray-700 w-16 h-16 rounded-full outline outline-white"
                   onClick={() => window.open('https://x.com/rafaelponton', '_blank')}
-                  aria-label="Canal de TikTok"
+                  aria-label="Canal de X"
                 >
                   <img className="h-8 w-8" src="https://cdn.simpleicons.org/x/white" />
                 </Button>
               </TooltipTrigger>
-              <TooltipContent>
+              <TooltipContent side="bottom" sideOffset={9}>
                 <p>@rafaelponton</p>
               </TooltipContent>
             </Tooltip>

@@ -1,4 +1,4 @@
-import { GraduationCap, Users, TrendingUp, PiggyBank, Radio, Speech } from "lucide-react"
+import { GraduationCap, Users, TrendingUp, PiggyBank, Radio } from "lucide-react"
 import { Button } from "@/components/ui/button"
 function About() {
     return (
@@ -32,14 +32,14 @@ function About() {
                             Ir a Youtube
                         </Button>
                     </div>
-                    <div className="flex flex-col items-center text-center">
+                    {/* <div className="flex flex-col items-center text-center">
                         <Speech className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Conversatorio</h3>
                         <p className="text-gray-400">Conversa e interactúa con Rafael Ponton todos los Sábados. 19:00 Hora Colombia (-5 UTC).</p>
                         <Button className="bg-black hover:bg-black/80 border border-white mt-2" onClick={() => window.open('https://www.tiktok.com/@elponton', '_blank')}>
                             Ir a Tiktok
                         </Button>
-                    </div>
+                    </div> */}
                     <div className="flex flex-col items-center text-center">
                         <PiggyBank className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Educación Gratuita</h3>

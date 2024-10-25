@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button"
 import banner from "../assets/banner.jpeg"
 function Banner() {
     return (
-        <section className="w-full py-10 md:py-24 lg:py-32 xl:py-48 relative w-screen bg-cover bg-center bg-no-repeat bg-local bg-origin-content"
+        <section className="w-full py-16 md:py-24 lg:py-32 xl:py-48 relative w-screen bg-cover bg-center bg-no-repeat bg-local bg-origin-content"
         style={{ backgroundImage: `url(${banner})`, }} id="home">
         <div className="absolute inset-0 bg-black/70" ></div>
             <div className="relative z-10 flex flex-col items-center space-y-8 text-center mx-auto">
