@@ -18,8 +18,6 @@ import { Check, Copy } from "lucide-react"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import qrBinance from "../assets/qrBinanceEF.png"
-import qrWallet from "../assets/qrWalletEF.png"
-import binanceLogo from "https://cdn.simpleicons.org/binance/white"
 import { useState } from "react"
 
 function Donation() {
