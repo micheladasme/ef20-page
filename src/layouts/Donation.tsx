@@ -19,6 +19,7 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import qrBinance from "../assets/qrBinanceEF.png"
 import qrWallet from "../assets/qrWalletEF.png"
+import binanceLogo from "https://cdn.simpleicons.org/binance/white"
 import { useState } from "react"
 
 function Donation() {
@@ -34,7 +35,7 @@ function Donation() {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-black to-gray-900" id="donation">
       <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Apoya a nuestro Canal</h2>
-      <p className="text-center text-gray-400 mb-8">
+      <p className="text-center text-gray-400 mb-8 mx-2">
           Apoya a Rafael para que siga creando <strong>contenido gratuito y de calidad.</strong>
         </p>
       <div className="flex flex-wrap justify-center gap-4">

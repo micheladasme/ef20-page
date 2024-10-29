@@ -1,4 +1,4 @@
-import { GraduationCap, Users, TrendingUp, PiggyBank, Radio } from "lucide-react"
+import { GraduationCap, Users, TrendingUp, PiggyBank, Radio, Speech } from "lucide-react"
 import { Button } from "@/components/ui/button"
 function About() {
     return (
@@ -27,23 +27,23 @@ function About() {
                     <div className="flex flex-col items-center text-center">
                         <Radio className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Programas en VIVO</h3>
-                        <p className="text-gray-400">Aprende en VIVO junto a Rafael de Lunes a Viernes. 19:00 Hora Colombia (-5 UTC).</p>
+                        <p className="text-gray-400">Aprende en VIVO junto a Rafael de Lunes a Viernes a las 19:00 - Hora Colombia (-5 UTC).</p>
                         <Button className="bg-[#ea333d] hover:bg-[#ea333d]/80 mt-2" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0/streams', '_blank')}>
                             Ir a Youtube
                         </Button>
                     </div>
-                    {/* <div className="flex flex-col items-center text-center">
-                        <Speech className="h-12 w-12 mb-4 text-yellow-500" />
-                        <h3 className="text-xl font-bold mb-2">Conversatorio</h3>
-                        <p className="text-gray-400">Conversa e interactúa con Rafael Ponton todos los Sábados. 19:00 Hora Colombia (-5 UTC).</p>
-                        <Button className="bg-black hover:bg-black/80 border border-white mt-2" onClick={() => window.open('https://www.tiktok.com/@elponton', '_blank')}>
-                            Ir a Tiktok
-                        </Button>
-                    </div> */}
                     <div className="flex flex-col items-center text-center">
                         <PiggyBank className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Educación Gratuita</h3>
                         <p className="text-gray-400">Todos los videos o lives están disponibles en Youtube de manera gratuita.</p>
+                    </div>
+                    <div className="flex flex-col items-center text-center">
+                        <Speech className="h-12 w-12 mb-4 text-yellow-500" />
+                        <h3 className="text-xl font-bold mb-2">Conversatorio</h3>
+                        <p className="text-gray-400">Conversa e interactúa con Rafael Ponton todos los Sábados las 19:00 - Hora Colombia (-5 UTC).</p>
+                        <Button className="bg-gradient-to-r from-[#fcb045] via-[#fd1d1d] to-[#833ab4] mt-2" onClick={() => window.open('https://www.instagram.com/educacionfinanciera2_0/', '_blank')}>
+                            Ir a Instagram
+                        </Button>
                     </div>
                 </div>
             </div>

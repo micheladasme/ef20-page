@@ -7,7 +7,7 @@ function Social() {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">
           Síguenos en Redes Sociales
         </h2>
-        <p className="text-center text-gray-400 mb-8">
+        <p className="text-center text-gray-400 mb-8 mx-2">
           Únete a nuestra comunidad y accede a nuestro contenido más reciente.
         </p>
         <div className="flex justify-center space-x-8">
@@ -32,11 +32,11 @@ function Social() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  className="bg-white text-white hover:bg-[#239cd7]-700 w-16 h-16 rounded-full outline outline-white"
+                  className="bg-white text-white  hover:bg-gray-300  w-16 h-16 px-0 rounded-full outline outline-white"
                   onClick={() => window.open('https://t.me/educacionfinancieratelegram', '_blank')}
                   aria-label="Canal de Telegram"
                 >
-                  <img className="h-8 w-8" src="https://cdn.simpleicons.org/telegram/[#26A5E4]" />
+                  <img className="h-16 w-16" src="https://cdn.simpleicons.org/telegram/[#26A5E4]" />
                 </Button>
               </TooltipTrigger>
               <TooltipContent side="bottom" sideOffset={9}>
@@ -53,11 +53,28 @@ function Social() {
                   onClick={() => window.open('https://x.com/rafaelponton', '_blank')}
                   aria-label="Canal de X"
                 >
-                  <img className="h-8 w-8" src="https://cdn.simpleicons.org/x/white" />
+                  <img className="h-7 w-7" src="https://cdn.simpleicons.org/x/white" />
                 </Button>
               </TooltipTrigger>
               <TooltipContent side="bottom" sideOffset={9}>
                 <p>@rafaelponton</p>
+              </TooltipContent>
+            </Tooltip>
+          </TooltipProvider>
+
+          <TooltipProvider delayDuration={0}>
+            <Tooltip>
+              <TooltipTrigger asChild>
+                <Button
+                  className="hover:bg-gray-300 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] text-white w-16 h-16 rounded-full outline outline-white"
+                  onClick={() => window.open('https://www.instagram.com/educacionfinanciera2_0/', '_blank')}
+                  aria-label="Canal de Instagram"
+                >
+                  <img className="h-8 w-8" src="https://cdn.simpleicons.org/instagram/white" />
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent side="bottom" sideOffset={9}>
+                <p>educacionfinanciera2_0</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

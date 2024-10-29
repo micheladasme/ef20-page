@@ -55,7 +55,7 @@ function Header() {
     )
     return (
         <header className="sticky top-0 z-50 w-full backdrop-blur-sm bg-black/75">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="container mx-auto px-4 sm:px-6 md:px-7 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     <a className="flex items-center justify-center" href="#">
                         <img src={logo} alt="EF 2.0 Logo" className="h-8 w-8 sm:h-10 sm:w-10 rounded-full" />
@@ -69,7 +69,7 @@ function Header() {
                     <Sheet open={isOpen} onOpenChange={setIsOpen}>
                         <SheetTrigger asChild>
                             <Button variant="ghost" size="icon" className="md:hidden" aria-label="Menu">
-                                <MenuIcon className="h-12 w-12" />
+                                <MenuIcon className="h-8 w-8" />
                             </Button>
                         </SheetTrigger>
                         <SheetTitle className="hidden">

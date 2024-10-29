@@ -15,7 +15,7 @@ function Banner() {
                 </p>
               </div>
               <div className="space-x-4">
-                <Button className="bg-yellow-500 text-black md:text-lg hover:bg-yellow-70 lg:w-30 lg:h-10 rounded-full" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0/playlists', '_blank')}>Ver Cursos</Button>
+                <Button className="bg-yellow-500 text-black text-lg hover:bg-yellow-70 w-30 h-10" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0/playlists', '_blank')}>Ver Cursos</Button>
               </div>
             </div>
         </section>
