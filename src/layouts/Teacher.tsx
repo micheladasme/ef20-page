@@ -24,6 +24,10 @@ function Teacher() {
                         <div className="flex-1 text-center md:text-left">
                             <h3 className="text-lg text-white">
                                 <strong>Rafael Ponton</strong> es el creador y profesor del canal <strong>Educación Financiera 2.0</strong> con más de 8 años de experiencia en el mundo de las criptomonedas, el cual demuestra todo su conocimiento en todo el contenido realizado desde el año 2014.
+                                <br></br>
+                                Ofrece la mejor información de educación financiera del siglo 21.
+                                A través de videos informativos y educativos se trata de contarles de manera precisa como evolucionan las finanzas y como tu puedes hacer tu los mismos.
+                                siempre decimos <strong> DEBEMOS ESTUDIAR COMPRENDER Y APLICAR LO APRENDIDO </strong> sino se convierte en letra muerta y bolsillos vacíos.
                             </h3>
                         </div>
                     </div>
