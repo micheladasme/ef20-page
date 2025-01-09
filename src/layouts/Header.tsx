@@ -40,6 +40,13 @@ function Header() {
             <Separator orientation="horizontal" className="md:hidden" />
             <a
                 className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
+                href="#videos" onClick={() => setIsOpen(false)}
+            >
+                Videos
+            </a>
+            <Separator orientation="horizontal" className="md:hidden" />
+            <a
+                className="text-sm font-medium hover:text-yellow-500 transition-colors md:block py-2"
                 href="#contact" onClick={() => setIsOpen(false)}
             >
                 Contacto

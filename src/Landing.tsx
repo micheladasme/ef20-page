@@ -5,6 +5,7 @@ import Social from "./layouts/Social";
 import Footer from "./layouts/Footer";
 import Donation from "./layouts/Donation";
 import Contact from "./layouts/Contact";
+import Videos from "./layouts/Videos";
 // import Content from "./layouts/Content";
 
 import Mentoring from "./layouts/Mentoring";
@@ -18,6 +19,7 @@ function Landing() {
         <About />
         <Teacher />
         <Mentoring/>
+        <Videos/>
         {/* <Content /> */}
         <Contact />
         <Social />

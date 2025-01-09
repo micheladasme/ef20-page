@@ -41,9 +41,9 @@ function About() {
                         <Speech className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Conversatorio</h3>
                         <p className="text-gray-400">Conversa e interactúa con Rafael Ponton todos los Sábados las 19:00 - Hora Colombia (-5 UTC).</p>
-                        <Button className="bg-gradient-to-r from-[#fcb045] via-[#fd1d1d] to-[#833ab4] mt-2" onClick={() => window.open('https://www.instagram.com/educacionfinanciera2_0/', '_blank')}>
+                        {/* <Button className="bg-gradient-to-r from-[#fcb045] via-[#fd1d1d] to-[#833ab4] mt-2" onClick={() => window.open('https://www.instagram.com/educacionfinanciera2_0/', '_blank')}>
                             Ir a Instagram
-                        </Button>
+                        </Button> */}
                     </div>
                 </div>
             </div>
