@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button"
-import banner from "../assets/banner.jpeg"
 import banner2 from "../assets/banner2.jpeg"
 function Banner() {
     return (

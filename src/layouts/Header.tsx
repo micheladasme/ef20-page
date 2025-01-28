@@ -8,7 +8,7 @@ import { useState } from "react"
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
-    const MenuItems = ({ mobile = false }) => (
+    const MenuItems = () => (
         <>
             <a
                 className="text-md font-medium hover:text-yellow-500 transition-colors md:block py-2"
@@ -16,7 +16,7 @@ function Header() {
             >
                 Inicio
             </a>
-            <Separator orientation="horizontal" className="lg:hidden" />
+            <Separator orientation="horizontal" className="{lg:hidden" />
             <a
                 className="text-md font-medium hover:text-yellow-500 transition-colors md:block py-2"
                 href="#about" onClick={() => setIsOpen(false)}
@@ -91,7 +91,7 @@ function Header() {
                                 </SheetTrigger>
                             </div>
                             <nav className="flex flex-col">
-                                <MenuItems mobile />
+                                <MenuItems />
                             </nav>
                         </SheetContent>
                     </Sheet>
