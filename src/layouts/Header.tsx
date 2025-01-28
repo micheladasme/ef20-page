@@ -16,7 +16,7 @@ function Header() {
             >
                 Inicio
             </a>
-            <Separator orientation="horizontal" className="{lg:hidden" />
+            <Separator orientation="horizontal" className="lg:hidden" />
             <a
                 className="text-md font-medium hover:text-yellow-500 transition-colors md:block py-2"
                 href="#about" onClick={() => setIsOpen(false)}
