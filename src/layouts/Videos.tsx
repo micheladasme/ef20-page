@@ -9,9 +9,9 @@ const videos = [
     },
     {
         id: "2",
-        title: "Como crear un portafolio de $3.000.",
-        thumbnail: "https://i.ytimg.com/vi/EHVn65dZ-6Y/hqdefault.jpg",
-        link: "https://www.youtube.com/watch?v=EHVn65dZ-6Y&list=PL5nMKFabss73CRbuNIhj6kGe9_M00Jeqc&index=2"
+        title: "¿Cómo registrarse y colocar los indicadores en tradingview?",
+        thumbnail: "https://i.ytimg.com/vi/k545O-x7TWQ/hqdefault.jpg",
+        link: "https://www.youtube.com/watch?v=k545O-x7TWQ"
     },
     {
         id: "3",
