@@ -14,7 +14,7 @@ import {
   CardContent,
   CardHeader,
 } from "@/components/ui/card"
-import { Check, Copy } from "lucide-react"
+import { Check, Copy, CreditCard } from "lucide-react"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import qrBinance from "../assets/qrBinanceEF.png"
@@ -138,6 +138,14 @@ function Donation() {
             </DialogFooter>
           </DialogContent>
         </Dialog>
+    <Card className="bg-black hover:bg-black/50 border-2 border-white" onClick={() => window.open('https://applink.ugly.cash/referral/elponton', '_blank')}>
+          <CardHeader>
+            <CreditCard className="h-8 w-8 text-white" />
+          </CardHeader>
+          <CardContent>
+            <p className="text-white font-medium">Tarjeta UGLYCASH</p>
+          </CardContent>
+        </Card>
       </div>
     </section>
   )

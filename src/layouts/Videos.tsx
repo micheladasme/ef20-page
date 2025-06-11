@@ -1,20 +1,14 @@
 import { PlayCircle } from 'lucide-react';
 
-const videos = [
+const videos = [  
     {
         id: "1",
-        title: "Evolución de las criptomonedas.",
-        thumbnail: "https://i.ytimg.com/vi/jScPYxOxnDo/hqdefault.jpg",
-        link: "https://www.youtube.com/watch?v=jScPYxOxnDo&list=PL5nMKFabss73G4VGmo4YUjBHnVFjnF3MF"
-    },
-    {
-        id: "2",
         title: "¿Cómo registrarse y colocar los indicadores en tradingview?",
         thumbnail: "https://i.ytimg.com/vi/k545O-x7TWQ/hqdefault.jpg",
         link: "https://www.youtube.com/watch?v=k545O-x7TWQ"
     },
     {
-        id: "3",
+        id: "2",
         title: "Proyectando el ATH de 216 monedas para el bullrun 2025.",
         thumbnail: "https://i.ytimg.com/vi/TSJNEwtHfQo/hqdefault.jpg",
         link: "https://www.youtube.com/watch?v=TSJNEwtHfQo&list=PL5nMKFabss72DIuMuw_RJ4zOODyDEXIjR&index=3"
@@ -31,7 +25,7 @@ function FeaturedVideos() {
                 <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
                     Aprende más sobre el mundo de las criptomonedas con nuestros videos educativos.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {videos.map((video) => (
                         <div key={video.id} className="group relative">
                             <a href={video.link} target="_blank" rel="noopener noreferrer">
