@@ -25,7 +25,7 @@ function FeaturedVideos() {
                 <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
                     Aprende más sobre el mundo de las criptomonedas con nuestros videos educativos.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {videos.map((video) => (
                         <div key={video.id} className="group relative">
                             <a href={video.link} target="_blank" rel="noopener noreferrer">
