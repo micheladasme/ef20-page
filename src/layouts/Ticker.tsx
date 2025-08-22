@@ -59,7 +59,7 @@ function TradingViewWidget() {
           "colorTheme": "dark",
           "locale": "es",
           "largeChartUrl": "",
-          "isTransparent": false,
+          "isTransparent": true,
           "showSymbolLogo": true,
           "displayMode": "adaptive"
         }`;
