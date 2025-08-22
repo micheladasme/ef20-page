@@ -27,8 +27,8 @@ function About() {
                     <div className="flex flex-col items-center text-center">
                         <Radio className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Programas en VIVO</h3>
-                        <p className="text-gray-400">Aprende en VIVO junto a Rafael de Lunes a Viernes a las 19:00 - Hora Colombia (-5 UTC).</p>
-                        <Button className="bg-[#ea333d] hover:bg-[#ea333d]/80 mt-2" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0/streams', '_blank')}>
+                        <p className="text-gray-400">Aprende en VIVO junto a Rafael los Lunes, Miercoles y Viernes a las 19:00 (Hora Colombia -5 UTC).</p>
+                        <Button className="border-2 bg-[#ea333d] hover:bg-[#ea333d]/80 mt-2" onClick={() => window.open('https://www.youtube.com/@EducacionFinanciera2.0/streams', '_blank')}>
                             Ir a Youtube
                         </Button>
                     </div>
@@ -41,9 +41,9 @@ function About() {
                         <Speech className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Conversatorio</h3>
                         <p className="text-gray-400">Conversa e interactúa con Rafael Ponton todos los Sábados las 19:00 - Hora Colombia (-5 UTC).</p>
-                        {/* <Button className="bg-gradient-to-r from-[#fcb045] via-[#fd1d1d] to-[#833ab4] mt-2" onClick={() => window.open('https://www.instagram.com/educacionfinanciera2_0/', '_blank')}>
-                            Ir a Instagram
-                        </Button> */}
+                        <Button className="border-2 border-t-[#08f7f0] border-l-[#08f7f0] border-b-[#ff0855] border-r-[#ff0855] mt-2 bg-black" onClick={() => window.open('https://www.tiktok.com/@educacionfinanciera2.0', '_blank')}>
+                            Ir a TikTok
+                        </Button>
                     </div>
                 </div>
             </div>
