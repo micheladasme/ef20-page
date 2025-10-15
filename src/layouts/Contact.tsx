@@ -10,7 +10,7 @@ function Contact() {
         Si tienes cualquier duda, habla con Rafael.
       </p>
       <a className="flex flex-wrap justify-center" href="#">
-        <img src={logo} alt="EF 2.0 Logo" className="h-28 w-28 sm:h-40 sm:w-40 rounded-full mb-4" />
+        <img src={logo} alt="EF 2.0 Logo" className="h-28 w-28 sm:h-40 sm:w-40 rounded-full mb-6" />
       </a>
       <div className="flex flex-wrap justify-center gap-4">
         <Button className="w-40 h-12 transition ease-in-out delay-150 bg-[#73c86a] hover:-translate-y-1 hover:scale-110 hover:hover:bg-[#73c86a]/80 duration-300" onClick={() => window.open('https://wa.me/573122534196?text=Hola Rafael, estoy interesado en hablar contigo.', '_blank')} >

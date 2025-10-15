@@ -4,6 +4,7 @@ import { MenuIcon, XIcon } from "lucide-react"
 import logo from "../assets/ef-logo-2.png"
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 import { useState } from "react"
+import Ticker from "./Ticker"
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
@@ -97,7 +98,9 @@ function Header() {
                     </Sheet>
                 </div>
             </div>
-        </header>)
+            <Ticker></Ticker>
+        </header>
+        )
 }
 
 export default Header
