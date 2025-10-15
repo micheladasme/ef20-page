@@ -37,14 +37,14 @@ function About() {
                         <h3 className="text-xl font-bold mb-2">Educación Gratuita</h3>
                         <p className="text-gray-400">Todos los videos o lives están disponibles en Youtube de manera gratuita.</p>
                     </div>
-                    <div className="flex flex-col items-center text-center">
+                    {/* <div className="flex flex-col items-center text-center">
                         <Speech className="h-12 w-12 mb-4 text-yellow-500" />
                         <h3 className="text-xl font-bold mb-2">Conversatorio</h3>
                         <p className="text-gray-400">Conversa e interactúa con Rafael Ponton todos los Sábados las 19:00 - Hora Colombia (-5 UTC).</p>
                         <Button className="border-2 border-t-[#08f7f0] border-l-[#08f7f0] border-b-[#ff0855] border-r-[#ff0855] mt-2 bg-black" onClick={() => window.open('https://www.tiktok.com/@educacionfinanciera2.0', '_blank')}>
                             Ir a TikTok
                         </Button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>

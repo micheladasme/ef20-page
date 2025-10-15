@@ -66,15 +66,15 @@ function Social() {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  className="bg-black text-white hover:bg-gray-700 w-14 h-14 sm:w-16 sm:h-16 rounded-full border-2 border-t-[#08f7f0] border-l-[#08f7f0] border-b-[#ff0855] border-r-[#ff0855]"
-                  onClick={() => window.open('https://www.tiktok.com/@educacionfinanciera2.0', '_blank')}
+                  className="bg-black text-white hover:bg-gray-700 w-14 h-14 sm:w-16 sm:h-16 rounded-full border-4 border-t-[#08f7f0] border-l-[#08f7f0] border-b-[#ff0855] border-r-[#ff0855]"
+                  onClick={() => window.open('https://www.tiktok.com/@rafaelponton2.0', '_blank')}
                   aria-label="Canal de TikTok"
                 >
                   <img className="h-7 max-w-7" src="https://cdn.simpleicons.org/tiktok/white" />
                 </Button>
               </TooltipTrigger>
               <TooltipContent side="bottom" sideOffset={9}>
-                <p>@educacionfinanciera2.0</p>
+                <p>@rafaelponton2.0</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>

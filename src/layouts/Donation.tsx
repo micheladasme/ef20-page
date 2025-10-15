@@ -19,6 +19,8 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import qrBinance from "../assets/qrBinanceEF.png"
 import qrWallet from "../assets/qrWalletEF.png"
+import uglyLogo from "../assets/uglylogo.png"
+import redotpayLogo from "../assets/redotpaylogo.png"
 import { useState } from "react"
 
 function Donation() {
@@ -37,8 +39,7 @@ function Donation() {
       <p className="text-center text-gray-400 mb-8 mx-2">
           Apoya a Rafael para que siga creando <strong>contenido gratuito y de calidad.</strong>
         </p>
-      <div className="flex flex-wrap justify-center gap-4">
-
+      <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 mx-5 justify-items-center sm:justify-center">
         <Card className="bg-[#0079C1] hover:bg-[#0079C1]/80 border-0" onClick={() => window.open('https://paypal.com/donate/?hosted_button_id=UGHG5VLXL3GML', '_blank')}>
           <CardHeader>
             <img className="h-8 w-8" src="https://cdn.simpleicons.org/paypal/white" />
@@ -49,17 +50,13 @@ function Donation() {
         </Card>
         <Dialog>
           <DialogTrigger className="flex flex-col">
-            {/* <Button className="bg-[#e7bb41] hover:bg-[#e7bb41]/80">
-              <img className="h-5 w-5" src="https://cdn.simpleicons.org/binance/white" />
-              Donar via Binance
-            </Button> */}
             <>
               <Card className="bg-[#e7bb41] hover:bg-[#e7bb41]/80 border-0">
                 <CardHeader>
                   <img className="h-8 w-8" src="https://cdn.simpleicons.org/binance/white" />
                 </CardHeader>
                 <CardContent>
-                  <p className="text-white font-medium">Donar via Binance</p>
+                  <p className="text-white font-medium text-left">Donar via Binance</p>
                 </CardContent>
               </Card>
             </>
@@ -91,7 +88,7 @@ function Donation() {
                   <img className="h-8 w-8" src="https://cdn.simpleicons.org/tether/white" />
                 </CardHeader>
                 <CardContent>
-                  <p className="text-white font-medium">Donar con USDT</p>
+                  <p className="text-white font-medium text-left">Donar con USDT</p>
                 </CardContent>
               </Card>
             </>
@@ -138,12 +135,20 @@ function Donation() {
             </DialogFooter>
           </DialogContent>
         </Dialog>
-    <Card className="bg-black hover:bg-black/50 border-2 border-white" onClick={() => window.open('https://applink.ugly.cash/referral/elponton', '_blank')}>
+        <Card className="bg-black hover:bg-black/50 border-2 border-white" onClick={() => window.open('https://applink.ugly.cash/referral/elponton', '_blank')}>
+            <CardHeader>
+            <img className="h-8 w-8 scale-150" src={uglyLogo} />
+            </CardHeader>
+          <CardContent>
+            <p className="text-white font-medium">Afiliado UGLYCASH</p>
+          </CardContent>
+        </Card>
+        <Card className="bg-[#d1363f] hover:bg-[#d1363f]/80 border-0" onClick={() => window.open('https://url.hk/i/es/qp707', '_blank')}>
           <CardHeader>
-            <CreditCard className="h-8 w-8 text-white" />
+            <img className="h-8 w-8 scale-125" src={redotpayLogo} />
           </CardHeader>
           <CardContent>
-            <p className="text-white font-medium">Tarjeta UGLYCASH</p>
+            <p className="text-white font-medium">Afiliado RedotPay</p>
           </CardContent>
         </Card>
       </div>

@@ -13,12 +13,12 @@ const videos = [
         thumbnail: "https://i.ytimg.com/vi/TSJNEwtHfQo/hqdefault.jpg",
         link: "https://www.youtube.com/watch?v=TSJNEwtHfQo"
     },
-    {
-        id: "3",
-        title: "Características de las blockchains.",
-        thumbnail: "https://i.ytimg.com/vi/43cMFpFwjrc/hqdefault.jpg",
-        link: "https://www.youtube.com/watch?v=43cMFpFwjrc"
-    }
+    // {
+    //     id: "3",
+    //     title: "Características de las blockchains.",
+    //     thumbnail: "https://i.ytimg.com/vi/43cMFpFwjrc/hqdefault.jpg",
+    //     link: "https://www.youtube.com/watch?v=43cMFpFwjrc"
+    // }
 ];
 
 function FeaturedVideos() {
@@ -31,7 +31,7 @@ function FeaturedVideos() {
                 <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
                     Aprende más sobre el mundo de las criptomonedas con nuestros videos educativos.
                 </p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {videos.map((video) => (
                         <div key={video.id} className="group relative">
                             <a href={video.link} target="_blank" rel="noopener noreferrer">
