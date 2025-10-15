@@ -1,4 +1,4 @@
-import { GraduationCap, Users, TrendingUp, PiggyBank, Radio, Speech } from "lucide-react"
+import { GraduationCap, Users, TrendingUp, PiggyBank, Radio } from "lucide-react"
 import { Button } from "@/components/ui/button"
 function About() {
     return (

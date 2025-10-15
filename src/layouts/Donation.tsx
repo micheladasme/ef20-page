@@ -14,7 +14,7 @@ import {
   CardContent,
   CardHeader,
 } from "@/components/ui/card"
-import { Check, Copy, CreditCard } from "lucide-react"
+import { Check, Copy } from "lucide-react"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import qrBinance from "../assets/qrBinanceEF.png"
