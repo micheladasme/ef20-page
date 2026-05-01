@@ -9,7 +9,7 @@ const videos = [
     },
     {
         id: "2",
-        title: "Proyectando el ATH de 216 monedas para el bullrun 2025.",
+        title: "Proyectando el ATH de 216 monedas para el bullrun.",
         thumbnail: "https://i.ytimg.com/vi/TSJNEwtHfQo/hqdefault.jpg",
         link: "https://www.youtube.com/watch?v=TSJNEwtHfQo"
     },
