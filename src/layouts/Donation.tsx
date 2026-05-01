@@ -21,6 +21,8 @@ import qrBinance from "../assets/qrBinanceEF.png"
 import qrWallet from "../assets/qrWalletEF.png"
 import uglyLogo from "../assets/uglylogo.png"
 import redotpayLogo from "../assets/redotpaylogo.png"
+import bitgetLogo from "../assets/bitgetlogo.png"
+import bitradexLogo from "../assets/bitradexlogo.png"
 import { useState } from "react"
 
 function Donation() {
@@ -39,8 +41,8 @@ function Donation() {
       <p className="text-center text-gray-400 mb-8 mx-2">
           Apoya a Rafael para que siga creando <strong>contenido gratuito y de calidad.</strong>
         </p>
-      <div className="grid grid-cols-2 sm:flex sm:flex-row gap-4 mx-5 justify-items-center sm:justify-center">
-        <Card className="bg-[#0079C1] hover:bg-[#0079C1]/80 border-0" onClick={() => window.open('https://paypal.com/donate/?hosted_button_id=UGHG5VLXL3GML', '_blank')}>
+      <div className="w-[60%] mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Card className="w-full bg-[#0079C1] hover:bg-[#0079C1]/80 border-0" onClick={() => window.open('https://paypal.com/donate/?hosted_button_id=UGHG5VLXL3GML', '_blank')}>
           <CardHeader>
             <img className="h-8 w-8" src="https://cdn.simpleicons.org/paypal/white" />
           </CardHeader>
@@ -49,9 +51,8 @@ function Donation() {
           </CardContent>
         </Card>
         <Dialog>
-          <DialogTrigger className="flex flex-col">
-            <>
-              <Card className="bg-[#e7bb41] hover:bg-[#e7bb41]/80 border-0">
+          <DialogTrigger asChild>
+            <Card className="w-full bg-[#e7bb41] hover:bg-[#e7bb41]/80 border-0">
                 <CardHeader>
                   <img className="h-8 w-8" src="https://cdn.simpleicons.org/binance/white" />
                 </CardHeader>
@@ -59,7 +60,6 @@ function Donation() {
                   <p className="text-white font-medium text-left">Donar via Binance</p>
                 </CardContent>
               </Card>
-            </>
           </DialogTrigger>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
@@ -81,9 +81,8 @@ function Donation() {
           </DialogContent>
         </Dialog>
         <Dialog>
-          <DialogTrigger>
-            <>
-              <Card className="bg-[#54a282] hover:bg-[#54a282]/80 border-0">
+          <DialogTrigger asChild>
+            <Card className="w-full bg-[#54a282] hover:bg-[#54a282]/80 border-0">
                 <CardHeader>
                   <img className="h-8 w-8" src="https://cdn.simpleicons.org/tether/white" />
                 </CardHeader>
@@ -91,7 +90,6 @@ function Donation() {
                   <p className="text-white font-medium text-left">Donar con USDT</p>
                 </CardContent>
               </Card>
-            </>
           </DialogTrigger>
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
@@ -135,7 +133,7 @@ function Donation() {
             </DialogFooter>
           </DialogContent>
         </Dialog>
-        <Card className="bg-black hover:bg-black/50 border-2 border-white" onClick={() => window.open('https://applink.ugly.cash/referral/elponton', '_blank')}>
+        <Card className="w-full bg-black hover:bg-black/50 border-2 border-white" onClick={() => window.open('https://applink.ugly.cash/referral/elponton', '_blank')}>
             <CardHeader>
             <img className="h-8 w-8 scale-150" src={uglyLogo} />
             </CardHeader>
@@ -143,12 +141,28 @@ function Donation() {
             <p className="text-white font-medium">Afiliado UGLYCASH</p>
           </CardContent>
         </Card>
-        <Card className="bg-[#d1363f] hover:bg-[#d1363f]/80 border-0" onClick={() => window.open('https://url.hk/i/es/qp707', '_blank')}>
+        <Card className="w-full bg-[#d0353e] hover:bg-[#d0353e]/80 border-0" onClick={() => window.open('https://url.hk/i/es/qp707', '_blank')}>
           <CardHeader>
             <img className="h-8 w-8 scale-125" src={redotpayLogo} />
           </CardHeader>
           <CardContent>
             <p className="text-white font-medium">Afiliado RedotPay</p>
+          </CardContent>
+        </Card>
+        <Card className="w-full bg-[#33FFFF] hover:bg-[#33FFFF]/80 border-0" onClick={() => window.open('https://partner.bitget.com/bg/F6CWKJ', '_blank')}>
+          <CardHeader>
+            <img className="h-8 w-8" src={bitgetLogo} />
+          </CardHeader>
+          <CardContent>
+            <p className="text-black font-medium">Afiliado Bitget</p>
+          </CardContent>
+        </Card>
+        <Card className="w-full bg-[#00ccff] hover:bg-[#00ccff]/80 border-0" onClick={() => window.open('https://www.bitradex.ai/es/account/register?inviteCode=VRBFP1', '_blank')}>
+          <CardHeader>
+            <img className="h-10 w-10" src={bitradexLogo} />
+          </CardHeader>
+          <CardContent>
+            <p className="text-black font-medium">Afiliado Bitradex</p>
           </CardContent>
         </Card>
       </div>
