@@ -38,13 +38,13 @@ function Header() {
             >
                 Mentorias
             </a>
-            <Separator orientation="horizontal" className="lg:hidden" />
+            {/* <Separator orientation="horizontal" className="lg:hidden" />
             <a
                 className="text-md font-medium hover:text-yellow-500 transition-colors md:block py-2"
                 href="#videos" onClick={() => setIsOpen(false)}
             >
                 Videos
-            </a>
+            </a> */}
             <Separator orientation="horizontal" className="lg:hidden" />
             <a
                 className="text-md font-medium hover:text-yellow-500 transition-colors md:block py-2"
